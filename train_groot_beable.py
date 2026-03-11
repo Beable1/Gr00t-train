@@ -36,8 +36,8 @@ def build_single_gpu_cmd(args: argparse.Namespace) -> List[str]:
         f"--batch_size={args.batch_size}",
         f"--steps={args.steps}",
         "--eval_freq=0",
-        "--save_freq=10000",
-        "--log_freq=10",
+        "--save_freq=20000",
+        "--log_freq=200",
         # GR00T policy
         "--policy.type=groot",
         "--policy.push_to_hub=false",

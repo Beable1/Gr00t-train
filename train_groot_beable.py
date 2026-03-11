@@ -77,12 +77,12 @@ def build_multi_gpu_cmd(args: argparse.Namespace) -> List[str]:
 
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(
-        description="Fine‑tune NVIDIA Isaac GR00T (via LeRobot) on Beable/dexterious_ee."
+        description="Fine‑tune NVIDIA Isaac GR00T (via LeRobot) on Beable/dexterous_ee_56."
     )
     parser.add_argument(
         "--dataset_repo_id",
         type=str,
-        default="Beable/dexterious_ee",
+        default="Beable/dexterous_ee_56",
         help="Hugging Face dataset repo id.",
     )
     parser.add_argument(

@@ -1,6 +1,6 @@
-## GR00T Training on `Beable/dexterious_ee`
+## GR00T Training on `Beable/dexterous_ee_56`
 
-This folder contains a minimal setup to **fine‑tune NVIDIA Isaac GR00T (via LeRobot)** on your existing dataset `Beable/dexterious_ee`, intended to be run on a cloud GPU machine.
+This folder contains a minimal setup to **fine‑tune NVIDIA Isaac GR00T (via LeRobot)** on your existing dataset `Beable/dexterous_ee_56`, intended to be run on a cloud GPU machine.
 
 The goal is to:
 - Use **`policy.type=groot`** instead of plain diffusion.
@@ -77,7 +77,7 @@ The script internally launches:
 - `policy.type=groot`  → GR00T policy head
 - `policy.tune_diffusion_model=false`  → only the action head is fine‑tuned,
   which is safer for a relatively small custom dataset.
-- `dataset.repo_id=Beable/dexterious_ee`
+- `dataset.repo_id=Beable/dexterous_ee_56`
 - `dataset.use_imagenet_stats=true`, `dataset.video_backend=torchcodec`
 - `policy.crop_shape=null`  → **no random/center crop**, the model always
   sees the full 360×640 images (this avoids the previous 84×84 crop issue).
@@ -86,7 +86,7 @@ The script internally launches:
 
 ### 4. Hugging Face access
 
-If `Beable/dexterious_ee` is **private**, make sure the machine has a valid
+If `Beable/dexterous_ee_56` is **private**, make sure the machine has a valid
 Hugging Face token:
 
 ```bash

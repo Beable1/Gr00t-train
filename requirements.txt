@@ -1,0 +1,17 @@
+torch>=2.2.1,<2.8.0
+torchvision>=0.21.0,<0.23.0
+
+accelerate>=1.0.0,<2.0.0
+lerobot[groot]>=0.4.0
+nvidia-gr00t-sdk>=0.1.0
+
+flash-attn>=2.5.9,<3.0.0
+ninja>=1.11.1
+packaging>=24.2,<26.0
+
+huggingface_hub>=0.25.0
+safetensors>=0.4.5
+numpy>=1.26.0,<3.0.0
+ffmpeg-python>=0.2.0
+
+wandb>=0.17.0

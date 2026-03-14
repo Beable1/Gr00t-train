@@ -47,8 +47,6 @@ def build_single_gpu_cmd(args: argparse.Namespace) -> List[str]:
         # Make sure images use ImageNet stats and torchcodec backend
         "--dataset.use_imagenet_stats=true",
         "--dataset.video_backend=torchcodec",
-        # IMPORTANT: disable cropping – use full 360x640 image
-        "--policy.crop_shape=null",
         # Optional but useful metadata
         f"--job_name={args.job_name}",
     ]
